@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>TccFacil</title>
+
+        <link rel="stylesheet" href="css/jquery.mobile.min.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+        <script type="text/javascript" src="js/js2.js"></script>
+    </head>
+ <body>
+ 	<div data-role="page" id="principal">
+ 		
+
+ 		<div data-role="header" id="cabecalho">
+            <h1>MEUS GERMES, HAAHUAHAUHAUHAUHA</h1>
+ 		</div>
+
+
+
+
+
+ 		<div data-role="main" id="conteudo" class="ui-content">
+ 			
+ 			<div id="pagprincipal">	
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="mostrarAreaProfessor()">Area do Professor</button>
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="mostrarAreaAluno()">Area do Aluno</button>
+ 			</div>
+
+
+ 			<div id="pagareaprofessor">
+            	<label for="usuariologin">Email:</label>
+            	<input type="email" name="usuariologin" id="usuariologin">
+
+            	<label for="senhalogin">Senha:</label>
+            	<input type="password" name="senhalogin" id="senhalogin">
+
+            	<button data-icon="check" data-inconpos="top" type="button" onclick="entrarProfessor()" id="enviar" class="margem-topo">Entrar</button>
+
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="cadastrarProfessor()">Ainda não tenho cadastro</button>
+
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="voltarPrincipal()">Voltar</button>            			
+ 			</div>
+
+
+ 			<div id="cadasprofessor">
+            	<label for="matriculacadastrar">Matricula:</label>
+            	<input type="text" name="matriculacadastrar" id="matriculacadastrar">
+
+            	<label for="usuariocadastrar">Email:</label>
+            	<input type="email" name="usuariocadastrar" id="usuariocadastrar">
+
+            	<label for="senhacadastrar">Senha:</label>
+            	<input type="password" name="senhacadastrar" id="senhacadastrar">
+
+            	<button data-icon="check" data-inconpos="top" type="button" onclick="cadastrarProfessorBanco()" id="enviar" class="margem-topo">Cadastrar</button>
+
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="voltarProfessor()">Voltar</button>            			
+ 			</div>
+
+ 			<div id="pageprofessorlogado">
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="tccSolicitado()">TCCs Solicitados</button>
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="VercadastrarTCC()">Cadastrar TCC</button> 
+                <button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="voltarProfessor()">Voltar</button> 			
+ 			</div> 
+
+            <div id="escolhaTCCAlunos">
+
+            </div>  
+
+
+ 			<div id="cadasTCC">
+            	<label for="matriculacadastrar">Titulo:</label>
+            	<input type="text" name="titulo" id="titulo">
+
+            	<label for="matriculacadastrar">Descrição:</label>
+            	<input type="text" name="descricao" id="descricao">
+
+            	<label for="matriculacadastrar">Area de Referencia:</label>
+            	<input type="text" name="area_referencia" id="area_referencia">
+
+            	<label for="matriculacadastrar">Nome do Orientador:</label>
+            	<input type="text" name="nome_orientador" id="nome_orientador">            	
+
+            	<form id="imagemprojeto" enctype="multipart/form-data">
+            		<label for="matriculacadastrar">imagem do Projeto:</label>
+            		<input type="file" name="img" id="img"> 
+            	</form>
+
+            	<button data-icon="check" data-inconpos="top" type="button" onclick="cadastrarTCC()" id="enviar" class="margem-topo">Cadastrar</button>
+
+            	<button data-icon="edit" type="button" id="cadastro" class="margem-topo" onclick="voltarProfessorPage()">Voltar</button>            			
+ 			</div>
+
+
+
+
+
+ 			<div id="pagareaaluno">
+ 			
+ 			</div> 	
+
+             <div id="cadastrarEscolha">
+                <label for="cadastrarEscolhaAluno">Mensagem:</label>
+                <input type="text" name="cadastrarEscolhaAluno" id="cadastrarEscolhaAluno">  
+                <div id="escolherTCCLegal"></div>
+                <button onclick="voltarPrincipal()">Voltar</button>                          
+            </div>      	
+ 		</div>
+
+
+
+
+
+
+
+ 		<div data-role="footer" id="rodape">
+ 			<h1>Todos os direitos reservados</h1>
+ 		</div>
+
+ 	</div>
+ 		<script type="text/javascript" src="cordova.js"></script>
+
+ </body>
+</html>
